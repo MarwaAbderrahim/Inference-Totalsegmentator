@@ -17,10 +17,21 @@ Go to the installation folder and follow the steps
 
 ```
 
+### One last step :
+To complete the setup process, please follow these instructions:
+
+Download the trained model using this link (I couldn't upload it due to its size exceeding 25MB) : https://abysmedical-my.sharepoint.com/:u:/g/personal/mabderrahim_abys-medical_com/ESmywf-ymBRIlsbIzu5SPf8BoFaxvmuEwyd8VkFItuXW6A?e=9Z7UWj
+
+Once downloaded, place the .model file in the following directory:
+
+/totalsegmentator_inference/models/Task257_TotalSegmentator_15mm_1139subj/nnUNetTrainerV2_ep4000_nomirror__nnUNetPlansv2.1/fold_0
+
+
+
 ### Usage
 In orfer to test the code, you need to download all files in this git.
 ```
-python TotalSegmentator.py -i "path of Dicom image" -o "path of the output folder"
+python TotalSegmentator.py -i "path of nifit image" -o "path of the output folder"
 ```
 
 ### Other commands
