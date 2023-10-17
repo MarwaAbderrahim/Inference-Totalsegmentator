@@ -10,6 +10,7 @@ Install dependencies:
 * Python >= 3.7
 * [Pytorch](http://pytorch.org/)
 * You should not have any nnU-Net installation in your python environment since TotalSegmentator will install its own custom installation.
+* PS: To test the segmentation code, you need to have a GPU available with at least 12GB of memory per user.
 
 ### Install Totalsegmentator
 ```
