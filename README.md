@@ -4,7 +4,7 @@ Tool for segmentation of 104 classes in CT images. It was trained on a wide rang
 
 ### Installation
 
-TotalSegmentator works on Ubuntu, Mac and Windows and on CPU and GPU (on CPU it is slow).
+The inference code works on Windows and on CPU and GPU (on CPU it is slow).
 
 Install dependencies:  
 * Python >= 3.7
