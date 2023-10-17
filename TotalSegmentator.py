@@ -2,22 +2,22 @@
 import os
 import io
 import sys
-os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
-from contextlib import contextmanager
 import warnings
 sys.stdout =io.StringIO()
+import time
+import nibabel
 import argparse
-from pkg_resources import require
-from pathlib import Path
 import numpy as np
 import nibabel as nib 
-from totalsegmentator_inference.python_api import totalsegmentator
-from DicomRTTool import DicomReaderWriter
-import nibabel
+from pathlib import Path
 import SimpleITK as sitk
-import os
-import time
+from pkg_resources import require
+from contextlib import contextmanager
+from DicomRTTool import DicomReaderWriter
+from totalsegmentator_inference.python_api import totalsegmentator
 from totalsegmentator_inference.libs import combine_masks_to_multilabel_file
+
+os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 def main():
 
